@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Игорь Долгирев](https://up.htmlacademy.ru/htmlcss/26/user/795487).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
