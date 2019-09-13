@@ -13,7 +13,10 @@
       <a href="#">
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип техномарта">
       </a>
-      <!-- Здесь будет форма (поиск) -->
+      <form action="" method="GET">
+        <label class="visually-hidden" for="search">Поиск:</label>
+        <input id="search" type="search" name="search" placeholder="Поиск:">
+      </form>
       <p>
         <a href="#">Закладки: 0</a>
         <a href="#">Корзина: 0</a>
@@ -211,7 +214,7 @@
     </section>
 
     <section>
-      <h2>О компании</h2>
+      <h2 class="visually-hidden">О компании</h2>
 
       <div>
         <h3>КОМПАНИЯ «Техномарт»</h3>
@@ -271,9 +274,9 @@
       <p>© 2010–2019 Компания «Техномарт»
         Все права защищены</p>
       <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#" aria-label="Вконтакте"></a></li>
+        <li><a href="#" aria-label="Фейсбук"></a></li>
+        <li><a href="#" aria-label="Инстаграм"></a></li>
       </ul>
       <p>
         Обратная связь: <br>
@@ -286,6 +289,31 @@
     </div>
 
   </footer>
+
+  <section>
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email">Ваш e-mail:</label>
+        <input type="email" name="email" id="user-email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="user-message">Текст письма</label>
+        <textarea name="message" id="user-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <section>
+    <h2 class="visually-hidden">Развёрнутая карта</h2>
+    <img src="img/big-map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="970" height="476">
+    <button type="button" aria-label="Закрыть"></button>
+  </section>
 
 </body>
 
