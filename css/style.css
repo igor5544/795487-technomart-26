@@ -319,6 +319,7 @@ body{
 
 .feature__slider-item{
     background-repeat: no-repeat;
+    background-color: #000;
 }
 
 .feature__slider-item:first-of-type{
