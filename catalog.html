@@ -20,7 +20,7 @@
             </a>
             <form action="https://echo.htmlacademy.ru" method="GET">
                 <label class="visually-hidden" for="search">Поиск:</label>
-                <input id="search" type="search" name="search" placeholder="Поиск:">
+                <input class="header__search" id="search" type="search" name="search" placeholder="Поиск:">
             </form>
             <p class="header__links">
                 <a href="#">Закладки: 0</a>
@@ -41,8 +41,8 @@
             </div>
             <div class="header__user">
                 <p>
-                    Равшан Джамшутович
-                    <button type="button" aria-label="Выход"></button>
+                    <a class="header__user-name" href="#">Равшан Джамшутович </a>
+                    <button class="header__user-logout" type="button" aria-label="Выход"></button>
                 </p>
                 <ul class="header__user-links">
                     <li><a href="#">Мои заказы</a></li>
@@ -77,7 +77,7 @@
             <h2>Фильтр:</h2>
             <form method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
-                    <legend>Цена:</legend>
+                    <legend class="filters__title">Цена:</legend>
                     <div>
                         <div>
                             <div tabindex="0" aria-label="Левый ползунок"></div>
@@ -85,54 +85,54 @@
                         </div>
                     </div>
                     <div>
-                        <label class="visually-hidden" for="price-min-value">От:</label>
+                        <label class="filters__name" class="visually-hidden" for="price-min-value">От:</label>
                         <input id="price-min-value" name="min-value" type="number" min="0" max="29500" value="0"
                             step="500">
-                        <label class="visually-hidden" for="price-max-value">До:</label>
+                        <label class="filters__name" class="visually-hidden" for="price-max-value">До:</label>
                         <input id="price-max-value" name="max-value" type="number" min="500" max="30000" value="30000"
                             step="500">
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Производители:</legend>
+                    <legend class="filters__title">Производители:</legend>
                     <ul>
                         <li>
                             <input type="checkbox" name="Bosch" id="filter-Bosch" checked>
-                            <label for="filter-Bosch">Bosch</label>
+                            <label class="filters__name" for="filter-Bosch">Bosch</label>
                         </li>
                         <li>
                             <input type="checkbox" name="interscol" id="filter-interscol">
-                            <label for="filter-interscol">Интерскол</label>
+                            <label class="filters__name" for="filter-interscol">Интерскол</label>
                         </li>
                         <li>
                             <input type="checkbox" name="Makita" id="filter-Makita" checked>
-                            <label for="filter-Makita">Makita</label>
+                            <label class="filters__name" for="filter-Makita">Makita</label>
                         </li>
                         <li>
                             <input type="checkbox" name="ewalt" id="filter-ewalt">
-                            <label for="filter-ewalt">Dewalt</label>
+                            <label class="filters__name" for="filter-ewalt">Dewalt</label>
                         </li>
                         <li>
                             <input type="checkbox" name="Hitachi" id="filter-Hitachi">
-                            <label for="filter-Hitachi">Hitachi</label>
+                            <label class="filters__name" for="filter-Hitachi">Hitachi</label>
                         </li>
                     </ul>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Питание:</legend>
+                    <legend class="filters__title">Питание:</legend>
                     <ul>
                         <li>
                             <input type="radio" name="charger-group" value="accumulator" id="filter-accum" checked>
-                            <label for="filter-accum">Аккумуляторные</label>
+                            <label class="filters__name" for="filter-accum">Аккумуляторные</label>
                         </li>
                         <li>
                             <input type="radio" name="charger-group" value="cable-charger" id="filter-cable">
-                            <label for="filter-cable">Сетевые</label>
+                            <label class="filters__name" for="filter-cable">Сетевые</label>
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit">Показать</button>
+                <button class="filters__btn" type="submit">Показать</button>
             </form>
         </section>
 
