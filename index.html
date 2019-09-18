@@ -45,7 +45,7 @@
       </ul>
     </div>
 
-    <nav  class="header__menu">
+    <nav class="header__menu">
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="kompany.html">Компания</a></li>
@@ -59,153 +59,157 @@
   </header>
 
   <main>
-    <section>
+    <section class="feature">
       <h2 class="visually-hidden">Особенности:</h2>
-      <ul>
-        <li>
-          <h3>Материалы</h3>
-          <a href="">на любой вкус</a>
+      <ul class="feature__list">
+        <li class="feature__item ">
+          <h3 class="feature__title">Материалы</h3>
+          <a class="feature__btn" href="">на любой вкус</a>
         </li>
-        <li>
-          <h3>Инструмент</h3>
-          <a href="">НА ВСЕ СЛУЧАИ</a>
+        <li class="feature__item ">
+          <h3 class="feature__title">Инструмент</h3>
+          <a class="feature__btn" href="">НА ВСЕ СЛУЧАИ</a>
         </li>
-        <li>
-          <h3>Техника</h3>
-          <a href="">для стройки</a>
+        <li class="feature__item ">
+          <h3 class="feature__title">Техника</h3>
+          <a class="feature__btn" href="">для стройки</a>
         </li>
-        <li>
-          <ul>
-            <button type="button" aria-label="Назад"></button>
-            <button type="button" aria-label="Вперёд"></button>
+        <li class="feature__item">
+          <ul class="feature__slider">
+            <button class="slider__arrow-prev" type="button" aria-label="Назад"></button>
+            <button class="slider__arrow-next" type="button" aria-label="Вперёд"></button>
             <div>
-              <label  class="visually-hidden" for="first-slide">Первый слайд</label>
-              <input type="radio" name="slider-items" id="first-slide">
-              <label  class="visually-hidden" for="second-slide">Второй слайд</label>
-              <input type="radio" name="slider-items" id="second-slide">
+              <label class="visually-hidden" for="first-slide">Первый слайд</label>
+              <input class="slider__dots" type="radio" name="slider-items" id="first-slide">
+              <label class="visually-hidden" for="second-slide">Второй слайд</label>
+              <input class="slider__dots" type="radio" name="slider-items" id="second-slide">
             </div>
-            <li>
-              <h3>Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>
-              <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+            <li class="feature__slider-item">
+              <h3 class="feature__slider-title">Перфораторы</h3>
+              <p class="feature__slider-text">Настоящие мужские игрушки</p>
+              <a class="feature__slider-btn main-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             </li>
-            <li>
-              <h3>Дрели</h3>
-              <p>Соседям на радость!</p>
-              <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+            <li class="feature__slider-item">
+              <h3 class="feature__slider-title">Дрели</h3>
+              <p class="feature__slider-text">Соседям на радость!</p>
+              <a class="feature__slider-btn main-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
             </li>
           </ul>
         </li>
-        <li>
-          <h3>Скидки 50%</h3>
-          <a href="">На 350 ТОВАРОВ</a>
+        <li class="feature__item ">
+          <h3 class="feature__title">Скидки 50%</h3>
+          <a class="feature__btn" href="">На 350 ТОВАРОВ</a>
         </li>
-        <li>
-          <h3>Доставка</h3>
-          <a href="">бесплатно</a>
+        <li class="feature__item ">
+          <h3 class="feature__title">Доставка</h3>
+          <a class="feature__btn" href="">бесплатно</a>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Популярные товары</h2>
-      <a href="">Все популярные товары</a>
-      <ul>
-        <li>
-          <h3>
+    <section class="producs price">
+      <div class="title__wrapper">
+        <h2 class="producs__title main-title">Популярные товары:</h2>
+        <a class="producs__btn main-btn" href="">Все популярные товары</a>
+      </div>
+      <ul class="producs__list price__list">
+        <li class="price__item">
+          <h3 class="price__title">
             Перфоратор
             <span>BOSCH BFG 9000</span>
           </h3>
           <p>
             <img src="img/product-3.png" width="218" height="170" alt="Перфоратор BOSCH BFG 9000»">
           </p>
-          <div>
-            <p>32500 Р.</p>
-            <p>25500 Р.</p>
+          <div class="cost__wrapper">
+            <p class="price__cost-sale">32500 Р.</p>
+            <p class="price__cost">25500 Р.</p>
           </div>
         </li>
-        <li>
-          <h3>
+        <li class="producs__item">
+          <h3 class="price__title">
             Перфоратор
             <span>BOSCH BFG 3000</span>
           </h3>
           <p>
             <img src="img/product-1.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000»">
           </p>
-          <div>
-            <p>22500 Р.</p>
-            <p>15500 Р.</p>
+          <div class="cost__wrapper">
+            <p class="price__cost-sale">22500 Р.</p>
+            <p class="price__cost">15500 Р.</p>
           </div>
         </li>
-        <li>
-          <h3>
+        <li class="producs__item">
+          <h3 class="price__title">
             Перфоратор
             <span>BOSCH BFG 6000</span>
           </h3>
           <p>
             <img src="img/product-2.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000»">
           </p>
-          <div>
-            <p>30500 Р.</p>
-            <p>25500 Р.</p>
+          <div class="cost__wrapper">
+            <p class="price__cost-sale">30500 Р.</p>
+            <p class="price__cost">25500 Р.</p>
           </div>
         </li>
-        <li>
-          <h3>
+        <li class="producs__item">
+          <h3 class="price__title">
             Перфоратор
             <span>BOSCH BFG 2000</span>
           </h3>
           <p>
             <img src="img/product-2.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000»">
           </p>
-          <div>
-            <p></p>
-            <p>25500 Р.</p>
+          <div class="cost__wrapper">
+            <p class="price__cost-sale"></p>
+            <p class="price__cost">25500 Р.</p>
           </div>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Популярные производители:</h2>
-      <a href="#">Все производители</a>
-      <ul>
-        <li>
+    <section class="firms">
+      <div class="title__wrapper">
+        <h2 class="firms__title main-title">Популярные производители:</h2>
+        <a class="firms__btn main-btn" href="#">Все производители</a>
+      </div>
+      <ul class="firms__list">
+        <li class="firms__item">
           <a href="catalog.html">
             <img src="img/company-1.png" width="126" height="37" alt="BOSCH">
           </a>
         </li>
-        <li>
+        <li class="firms__item">
           <a href="catalog.html">
             <img src="img/company-2.png" width="123" height="40" alt="makita">
           </a>
         </li>
-        <li>
+        <li class="firms__item">
           <a href="catalog.html">
             <img src="img/company-3.png" width="146" height="44" alt="DeWALT">
           </a>
         </li>
-        <li>
+        <li class="firms__item">
           <a href="catalog.html">
             <img src="img/company-4.png" width="200" height="88" alt="интерскол">
           </a>
         </li>
-        <li>
+        <li class="firms__item">
           <a href="catalog.html">
             <img src="img/company-5.png" width="169" height="31" alt="HITACHI">
           </a>
         </li>
-        <li>
+        <li class="firms__item">
           <a href="catalog.html">
             <img src="img/company-6.png" width="121" height="73" alt="LG">
           </a>
         </li>
-        <li>
+        <li class="firms__item">
           <a href="catalog.html">
             <img src="img/company-7.png" width="151" height="96" alt="AEG POWER SOLUTIONS">
           </a>
         </li>
-        <li>
+        <li class="firms__item">
           <a href="catalog.html">
             <img src="img/company-8.png" width="204" height="69" alt="metabo  work. don't play">
           </a>
@@ -213,56 +217,56 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!
+    <section class="service">
+      <h2 class="service__title main-title">Сервисы</h2>
+      <p class="service__text main-text">Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul>
+      <ul class="service__btns-list">
         <li>
-          <button type="button">Доставка</button>
+          <button class="service__btn btn-active" type="button">Доставка</button>
         </li>
         <li>
-          <button type="button">Гарантия</button>
+          <button class="service__btn" type="button">Гарантия</button>
         </li>
         <li>
-          <button type="button">Кредит</button>
+          <button class="service__btn" type="button">Кредит</button>
         </li>
       </ul>
-      <ul>
-        <li>
-          <h3>Доставка</h3>
-          <p>
+      <ul class="service__list">
+        <li class="service__item">
+          <h3 class="service__item-title">Доставка</h3>
+          <p  class="service__text main-text">
             Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно!
           </p>
-          <p>
+          <p  class="service__text main-text">
             Ведь мы неплохо заработаем,
             поднимая его на ваш этаж!
           </p>
         </li>
-        <li>
-          <h3>Гарантия</h3>
-          <p>
+        <li class="service__item">
+          <h3 class="service__item-title">Гарантия</h3>
+          <p  class="service__text main-text">
             Если купленный у нас товар поломается или заискрит,
           </p>
-          <p>
+          <p  class="service__text main-text">
             а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
             Мы обменяем
             сгоревший товар на новый.
           </p>
-          <p>
+          <p  class="service__text main-text">
             Дом уж восстановите как-нибудь сами.
           </p>
         </li>
-        <li>
-          <h3>Кредит</h3>
-          <p>
+        <li class="service__item">
+          <h3 class="service__item-title">Кредит</h3>
+          <p  class="service__text main-text">
             Залезть в долговую яму стало проще!
           </p>
-          <p>
+          <p  class="service__text main-text">
             Кредитные консультанты придут вам на помощь.
           </p>
-          <a href="#">Отправить заявку</a>
+          <a class="service__item-btn main-btn" href="#">Отправить заявку</a>
         </li>
       </ul>
     </section>
@@ -272,29 +276,30 @@
 
       <div>
         <h3 class="about__title">КОМПАНИЯ «Техномарт»</h3>
-        <p class="about__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+        <p class="about__text main-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+          строительства не оставит
           равнодушными
           любителей сэкономить на гастарбайтерах.</p>
-        <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России!
+        <p class="about__text main-text">Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:</p>
-        <ul  class="about__list">
+        <ul class="about__list">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="about__btn" href="">
+        <a class="about__btn main-btn" href="">
           Подробнее о компании
         </a>
       </div>
 
       <div>
         <h3 class="about__title">КОНТАКТЫ</h3>
-        <p class="about__text">Вы можете забрать товар сами,
+        <p class="about__text main-text">Вы можете забрать товар сами,
           заехав в наш офис:</p>
         <a class="about__map" href="#">
           <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
-        <a class="about__btn" href="">
+        <a class="about__btn main-btn" href="">
           Заблудились? Напишите НАМ!
         </a>
       </div>

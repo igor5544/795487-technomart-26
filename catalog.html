@@ -40,7 +40,7 @@
                 <p> г. Санкт-Петербург, ул. Б. Конюшенная, д.</p>
             </div>
             <div class="header__user">
-                <p>
+                <p  class="header__user-top">
                     <a class="header__user-name" href="#">Равшан Джамшутович </a>
                     <button class="header__user-logout" type="button" aria-label="Выход"></button>
                 </p>
@@ -71,30 +71,30 @@
             <li><a href="Tool.html">Инструмент</a></li>
             <li>Перфораторы</li>
         </ul>
-        <h1 class="catalog__title">Перфораторы</h1>
+        <h1 class="catalog__title main-title">Перфораторы</h1>
 
         <section class="filters">
-            <h2>Фильтр:</h2>
+            <h2 class="filters__title">Фильтр:</h2>
             <form method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                    <legend class="filters__title">Цена:</legend>
-                    <div>
-                        <div>
-                            <div tabindex="0" aria-label="Левый ползунок"></div>
-                            <div tabindex="0" aria-label="Правый ползунок"></div>
+                <fieldset class="filters__set">
+                    <legend class="filters__subtitle">Цена:</legend>
+                    <div class="filters__range">
+                        <div class="filters__range-line">
+                            <div class="range__control-left" tabindex="0" aria-label="Левый ползунок"></div>
+                            <div class="range__control-right" tabindex="0" aria-label="Правый ползунок"></div>
                         </div>
                     </div>
-                    <div>
+                    <div class="filters__range-numbers">
                         <label class="filters__name" class="visually-hidden" for="price-min-value">От:</label>
-                        <input id="price-min-value" name="min-value" type="number" min="0" max="29500" value="0"
+                        <input class="filters__range-start" id="price-min-value" name="min-value" type="number" min="0" max="29500" value="0"
                             step="500">
                         <label class="filters__name" class="visually-hidden" for="price-max-value">До:</label>
-                        <input id="price-max-value" name="max-value" type="number" min="500" max="30000" value="30000"
+                        <input class="filters__range-finish" id="price-max-value" name="max-value" type="number" min="500" max="30000" value="30000"
                             step="500">
                     </div>
                 </fieldset>
-                <fieldset>
-                    <legend class="filters__title">Производители:</legend>
+                <fieldset class="filters__set">
+                    <legend class="filters__subtitle">Производители:</legend>
                     <ul>
                         <li>
                             <input type="checkbox" name="Bosch" id="filter-Bosch" checked>
@@ -119,8 +119,8 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
-                    <legend class="filters__title">Питание:</legend>
+                <fieldset class="filters__set">
+                    <legend class="filters__subtitle">Питание:</legend>
                     <ul>
                         <li>
                             <input type="radio" name="charger-group" value="accumulator" id="filter-accum" checked>
@@ -132,26 +132,26 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button class="filters__btn" type="submit">Показать</button>
+                <button class="filters__btn inner-btn" type="submit">Показать</button>
             </form>
         </section>
 
         <section class="price">
             <h2 class="visually-hidden">Список перфораторов</h2>
-            <div>
-                <h3>Сортировка:</h3>
-                <ul>
-                    <li><a href="#">По цене</a></li>
-                    <li><a href="#">По типу</a></li>
-                    <li><a href="#">По функционалу</a></li>
+            <div class="price__sorting">
+                <h3 class="price__sorting-title">Сортировка:</h3>
+                <ul class="price__sorting-list">
+                    <li><a class="price__sorting-item sorting-active" href="#">По цене</a></li>
+                    <li><a class="price__sorting-item" href="#">По типу</a></li>
+                    <li><a class="price__sorting-item" href="#">По функционалу</a></li>
                 </ul>
-                <ul>
-                    <li><a href="#" aria-label="По убыванию"></a></li>
-                    <li><a href="#" aria-label="По возрастанию"></a></li>
+                <ul  class="price__sorting-btns">
+                    <li><a class="price__sorting-up" href="#" aria-label="По убыванию"></a></li>
+                    <li><a class="price__sorting-down" href="#" aria-label="По возрастанию"></a></li>
                 </ul>
             </div>
             <ul class="price__list">
-                <li>
+                <li  class="price__item">
                     <h3 class="price__title">
                         Перфоратор
                         <span>BOSCH BFG 3000</span>
@@ -164,7 +164,7 @@
                         <p class="price__cost"> 15500 Р.</p>
                     </div>
                 </li>
-                <li>
+                <li  class="price__item">
                     <h3 class="price__title">
                         Перфоратор
                         <span>BOSCH BFG 6000</span>
@@ -177,7 +177,7 @@
                         <p class="price__cost">25500 Р.</p>
                     </div>
                 </li>
-                <li>
+                <li  class="price__item">
                     <h3 class="price__title">
                         Перфоратор
                         <span>BOSCH BFG 2000</span>
@@ -190,7 +190,7 @@
                         <p class="price__cost">12500 Р.</p>
                     </div>
                 </li>
-                <li>
+                <li  class="price__item">
                     <h3 class="price__title">
                         Перфоратор
                         <span>BOSCH BFG 3000</span>
@@ -203,7 +203,7 @@
                         <p class="price__cost">15500 Р.</p>
                     </div>
                 </li>
-                <li>
+                <li  class="price__item">
                     <h3 class="price__title">
                         Перфоратор
                         <span>BOSCH BFG 6000</span>
@@ -216,7 +216,7 @@
                         <p class="price__cost">25500 Р.</p>
                     </div>
                 </li>
-                <li>
+                <li  class="price__item">
                     <h3 class="price__title">
                         Перфоратор
                         <span>BOSCH BFG 2000</span>
@@ -229,7 +229,7 @@
                         <p class="price__cost">12500 Р.</p>
                     </div>
                 </li>
-                <li>
+                <li  class="price__item">
                     <h3 class="price__title">
                         Перфоратор
                         <span>BOSCH BFG 3000</span>
@@ -242,7 +242,7 @@
                         <p class="price__cost">15500 Р.</p>
                     </div>
                 </li>
-                <li>
+                <li  class="price__item">
                     <h3 class="price__title">
                         Перфоратор
                         <span>BOSCH BFG 6000</span>
@@ -255,7 +255,7 @@
                         <p class="price__cost">25500 Р.</p>
                     </div>
                 </li>
-                <li>
+                <li  class="price__item">
                     <h3 class="price__title">
                         Перфоратор
                         <span>BOSCH BFG 2000</span>
@@ -269,21 +269,21 @@
                     </div>
                 </li>
             </ul>
-            <ul>
-                <li><a>1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">Следующая</a></li>
+            <ul class="price__pages">
+                <li><a class="price__page-number inner-btn page-active">1</a></li>
+                <li><a class="price__page-number inner-btn" href="#">2</a></li>
+                <li><a class="price__page-number inner-btn" href="#">3</a></li>
+                <li><a class="price__page-btn inner-btn" href="#">Следующая</a></li>
             </ul>
         </section>
-        <section>
-            <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-            <p>
+        <section class="info">
+            <h2 class="info__title main-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+            <p class="info__text main-text">
                 Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
                 кирпиче, бетоне и
                 камне.
             </p>
-            <p>
+            <p class="info__text main-text">
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
                 дрели,
                 шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве
