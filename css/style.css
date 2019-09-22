@@ -403,11 +403,11 @@ body{
     background-color: #dc91d8;
 }
 
-.feature__item:nth-child(5){
+.feature__items-right .feature__item:nth-child(1){
     background-color: #8ed78f;
 }
 
-.feature__item:nth-child(6){
+.feature__items-right .feature__item:nth-child(2){
     background-color: #ffc047;
 }
 
@@ -425,6 +425,7 @@ body{
 .feature__title{
     margin-top: 0;
     padding-top: 24px;
+    margin-bottom: 12px;
     margin-left: 24px;
     font-size: 24px;
     line-height: 30px;
@@ -432,10 +433,16 @@ body{
 }
 
 .feature__btn{
-    padding: 10px 24px;
+    display: block;
+    max-width: 135px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
     margin-left: 24px;
     line-height: 18px;
     color: #fff;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.1);
