@@ -592,6 +592,7 @@ body{
 }
 
 .catalog__breadcrumbs-home a{
+    display: block;
     background-image: url(../img/icon-home.svg);
     background-repeat: no-repeat;
     background-position: center;
