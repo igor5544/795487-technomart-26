@@ -74,216 +74,230 @@
 
   <main>
     <section class="feature">
-
-      <h2 class="visually-hidden">Особенности:</h2>
-      <ul class="feature__list">
-        <li class="feature__item ">
-          <h3 class="feature__title">Материалы</h3>
-          <a class="feature__btn" href="">на любой вкус</a>
-        </li>
-        <li class="feature__item ">
-          <h3 class="feature__title">Инструмент</h3>
-          <a class="feature__btn" href="">НА ВСЕ СЛУЧАИ</a>
-        </li>
-        <li class="feature__item ">
-          <h3 class="feature__title">Техника</h3>
-          <a class="feature__btn" href="">для стройки</a>
-        </li>
-        <li class="feature__item">
-          <ul class="feature__slider">
-            <button class="slider__arrow-prev" type="button" aria-label="Назад"></button>
-            <button class="slider__arrow-next" type="button" aria-label="Вперёд"></button>
-            <div>
-              <label class="visually-hidden" for="first-slide">Первый слайд</label>
-              <input class="slider__dots" type="radio" name="slider-items" id="first-slide">
-              <label class="visually-hidden" for="second-slide">Второй слайд</label>
-              <input class="slider__dots" type="radio" name="slider-items" id="second-slide">
+      <div class="container">
+        <h2 class="visually-hidden">Особенности:</h2>
+        <ul class="feature__list">
+          <li class="feature__item">
+            <h3 class="feature__title">Материалы</h3>
+            <a class="feature__btn" href="">на любой вкус</a>
+          </li>
+          <li class="feature__item">
+            <h3 class="feature__title">Инструмент</h3>
+            <a class="feature__btn" href="">НА ВСЕ СЛУЧАИ</a>
+          </li>
+          <li class="feature__item">
+            <h3 class="feature__title">Техника</h3>
+            <a class="feature__btn" href="">для стройки</a>
+          </li>
+          <li class="feature__item slider">
+            <ul class="feature__slider">
+              <div class="feature__slider-control">
+                <button class="slider__arrow-prev" type="button" aria-label="Назад"></button>
+                <button class="slider__arrow-next" type="button" aria-label="Вперёд"></button>
+                <div class="slider-dots__wrapeer">
+                  <label class="visually-hidden" for="first-slide">Первый слайд</label>
+                  <input class="slider__dots" type="radio" name="slider-items" id="first-slide">
+                  <label class="visually-hidden" for="second-slide">Второй слайд</label>
+                  <input class="slider__dots" type="radio" name="slider-items" id="second-slide" checked>
+                </div>
+              </div>
+              <li class="feature__slider-item">
+                <h3 class="feature__slider-title">Перфораторы</h3>
+                <p class="feature__slider-text">Настоящие мужские игрушки</p>
+                <a class="feature__slider-btn main-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              </li>
+              <li class="feature__slider-item">
+                <h3 class="feature__slider-title">Дрели</h3>
+                <p class="feature__slider-text">Соседям на радость!</p>
+                <a class="feature__slider-btn main-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="feature__items-right">
+            <div class="feature__item">
+              <h3 class="feature__title">Скидки 50%</h3>
+              <a class="feature__btn" href="">На 350 ТОВАРОВ</a>
             </div>
-            <li class="feature__slider-item">
-              <h3 class="feature__slider-title">Перфораторы</h3>
-              <p class="feature__slider-text">Настоящие мужские игрушки</p>
-              <a class="feature__slider-btn main-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-            </li>
-            <li class="feature__slider-item">
-              <h3 class="feature__slider-title">Дрели</h3>
-              <p class="feature__slider-text">Соседям на радость!</p>
-              <a class="feature__slider-btn main-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-            </li>
-          </ul>
-        </li>
-        <li class="feature__item ">
-          <h3 class="feature__title">Скидки 50%</h3>
-          <a class="feature__btn" href="">На 350 ТОВАРОВ</a>
-        </li>
-        <li class="feature__item ">
-          <h3 class="feature__title">Доставка</h3>
-          <a class="feature__btn" href="">бесплатно</a>
-        </li>
-      </ul>
+            <div class="feature__item">
+              <h3 class="feature__title">Доставка</h3>
+              <a class="feature__btn" href="">бесплатно</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="producs price">
-      <div class="title__wrapper">
-        <h2 class="producs__title main-title">Популярные товары:</h2>
-        <a class="producs__btn main-btn" href="">Все популярные товары</a>
+      <div class="container">
+        <div class="title__wrapper">
+          <h2 class="producs__title main-title">Популярные товары:</h2>
+          <a class="producs__btn main-btn" href="">Все популярные товары</a>
+        </div>
+        <ul class="producs__list price__list">
+          <li class="price__item">
+            <h3 class="price__title">
+              Перфоратор
+              <span>BOSCH BFG 9000</span>
+            </h3>
+            <p>
+              <img src="img/product-3.png" width="218" height="170" alt="Перфоратор BOSCH BFG 9000»">
+            </p>
+            <div class="cost__wrapper">
+              <p class="price__cost-sale">32500 Р.</p>
+              <p class="price__cost">25500 Р.</p>
+            </div>
+          </li>
+          <li class="price__item">
+            <h3 class="price__title">
+              Перфоратор
+              <span>BOSCH BFG 3000</span>
+            </h3>
+            <p>
+              <img src="img/product-1.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000»">
+            </p>
+            <div class="cost__wrapper">
+              <p class="price__cost-sale">22500 Р.</p>
+              <p class="price__cost">15500 Р.</p>
+            </div>
+          </li>
+          <li class="price__item">
+            <h3 class="price__title">
+              Перфоратор
+              <span>BOSCH BFG 6000</span>
+            </h3>
+            <p>
+              <img src="img/product-2.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000»">
+            </p>
+            <div class="cost__wrapper">
+              <p class="price__cost-sale">30500 Р.</p>
+              <p class="price__cost">25500 Р.</p>
+            </div>
+          </li>
+          <li class="price__item">
+            <h3 class="price__title">
+              Перфоратор
+              <span>BOSCH BFG 2000</span>
+            </h3>
+            <p>
+              <img src="img/product-2.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000»">
+            </p>
+            <div class="cost__wrapper">
+              <p class="price__cost-sale"></p>
+              <p class="price__cost">25500 Р.</p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="producs__list price__list">
-        <li class="price__item">
-          <h3 class="price__title">
-            Перфоратор
-            <span>BOSCH BFG 9000</span>
-          </h3>
-          <p>
-            <img src="img/product-3.png" width="218" height="170" alt="Перфоратор BOSCH BFG 9000»">
-          </p>
-          <div class="cost__wrapper">
-            <p class="price__cost-sale">32500 Р.</p>
-            <p class="price__cost">25500 Р.</p>
-          </div>
-        </li>
-        <li class="price__item">
-          <h3 class="price__title">
-            Перфоратор
-            <span>BOSCH BFG 3000</span>
-          </h3>
-          <p>
-            <img src="img/product-1.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000»">
-          </p>
-          <div class="cost__wrapper">
-            <p class="price__cost-sale">22500 Р.</p>
-            <p class="price__cost">15500 Р.</p>
-          </div>
-        </li>
-        <li class="price__item">
-          <h3 class="price__title">
-            Перфоратор
-            <span>BOSCH BFG 6000</span>
-          </h3>
-          <p>
-            <img src="img/product-2.png" width="218" height="170" alt="Перфоратор BOSCH BFG 6000»">
-          </p>
-          <div class="cost__wrapper">
-            <p class="price__cost-sale">30500 Р.</p>
-            <p class="price__cost">25500 Р.</p>
-          </div>
-        </li>
-        <li class="price__item">
-          <h3 class="price__title">
-            Перфоратор
-            <span>BOSCH BFG 2000</span>
-          </h3>
-          <p>
-            <img src="img/product-2.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000»">
-          </p>
-          <div class="cost__wrapper">
-            <p class="price__cost-sale"></p>
-            <p class="price__cost">25500 Р.</p>
-          </div>
-        </li>
-      </ul>
     </section>
 
     <section class="firms">
-      <div class="title__wrapper">
-        <h2 class="firms__title main-title">Популярные производители:</h2>
-        <a class="firms__btn main-btn" href="#">Все производители</a>
+      <div class="container">
+        <div class="title__wrapper">
+          <h2 class="firms__title main-title">Популярные производители:</h2>
+          <a class="firms__btn main-btn" href="#">Все производители</a>
+        </div>
+        <ul class="firms__list">
+          <li class="firms__item">
+            <a href="catalog.html">
+              <img src="img/company-1.png" width="126" height="37" alt="BOSCH">
+            </a>
+          </li>
+          <li class="firms__item">
+            <a href="catalog.html">
+              <img src="img/company-2.png" width="123" height="40" alt="makita">
+            </a>
+          </li>
+          <li class="firms__item">
+            <a href="catalog.html">
+              <img src="img/company-3.png" width="146" height="44" alt="DeWALT">
+            </a>
+          </li>
+          <li class="firms__item">
+            <a href="catalog.html">
+              <img src="img/company-4.png" width="200" height="88" alt="интерскол">
+            </a>
+          </li>
+          <li class="firms__item">
+            <a href="catalog.html">
+              <img src="img/company-5.png" width="169" height="31" alt="HITACHI">
+            </a>
+          </li>
+          <li class="firms__item">
+            <a href="catalog.html">
+              <img src="img/company-6.png" width="121" height="73" alt="LG">
+            </a>
+          </li>
+          <li class="firms__item">
+            <a href="catalog.html">
+              <img src="img/company-7.png" width="151" height="96" alt="AEG POWER SOLUTIONS">
+            </a>
+          </li>
+          <li class="firms__item">
+            <a href="catalog.html">
+              <img src="img/company-8.png" width="204" height="69" alt="metabo  work. don't play">
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="firms__list">
-        <li class="firms__item">
-          <a href="catalog.html">
-            <img src="img/company-1.png" width="126" height="37" alt="BOSCH">
-          </a>
-        </li>
-        <li class="firms__item">
-          <a href="catalog.html">
-            <img src="img/company-2.png" width="123" height="40" alt="makita">
-          </a>
-        </li>
-        <li class="firms__item">
-          <a href="catalog.html">
-            <img src="img/company-3.png" width="146" height="44" alt="DeWALT">
-          </a>
-        </li>
-        <li class="firms__item">
-          <a href="catalog.html">
-            <img src="img/company-4.png" width="200" height="88" alt="интерскол">
-          </a>
-        </li>
-        <li class="firms__item">
-          <a href="catalog.html">
-            <img src="img/company-5.png" width="169" height="31" alt="HITACHI">
-          </a>
-        </li>
-        <li class="firms__item">
-          <a href="catalog.html">
-            <img src="img/company-6.png" width="121" height="73" alt="LG">
-          </a>
-        </li>
-        <li class="firms__item">
-          <a href="catalog.html">
-            <img src="img/company-7.png" width="151" height="96" alt="AEG POWER SOLUTIONS">
-          </a>
-        </li>
-        <li class="firms__item">
-          <a href="catalog.html">
-            <img src="img/company-8.png" width="204" height="69" alt="metabo  work. don't play">
-          </a>
-        </li>
-      </ul>
     </section>
 
     <section class="service">
-      <h2 class="service__title main-title">Сервисы</h2>
-      <p class="service__text main-text">Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul class="service__btns-list">
-        <li>
-          <button class="service__btn btn-active" type="button">Доставка</button>
-        </li>
-        <li>
-          <button class="service__btn" type="button">Гарантия</button>
-        </li>
-        <li>
-          <button class="service__btn" type="button">Кредит</button>
-        </li>
-      </ul>
-      <ul class="service__list">
-        <li class="service__item">
-          <h3 class="service__item-title">Доставка</h3>
-          <p class="service__text main-text">
-            Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно!
-          </p>
-          <p class="service__text main-text">
-            Ведь мы неплохо заработаем,
-            поднимая его на ваш этаж!
-          </p>
-        </li>
-        <li class="service__item">
-          <h3 class="service__item-title">Гарантия</h3>
-          <p class="service__text main-text">
-            Если купленный у нас товар поломается или заискрит,
-          </p>
-          <p class="service__text main-text">
-            а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
-            Мы обменяем
-            сгоревший товар на новый.
-          </p>
-          <p class="service__text main-text">
-            Дом уж восстановите как-нибудь сами.
-          </p>
-        </li>
-        <li class="service__item">
-          <h3 class="service__item-title">Кредит</h3>
-          <p class="service__text main-text">
-            Залезть в долговую яму стало проще!
-          </p>
-          <p class="service__text main-text">
-            Кредитные консультанты придут вам на помощь.
-          </p>
-          <a class="service__item-btn main-btn" href="#">Отправить заявку</a>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="service__title main-title">Сервисы</h2>
+        <p class="service__text main-text">Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div class="service-tabs__wrapper">
+          <ul class="service__btns-list">
+            <li>
+              <button class="service__btn btn-active" type="button">Доставка</button>
+            </li>
+            <li>
+              <button class="service__btn" type="button">Гарантия</button>
+            </li>
+            <li>
+              <button class="service__btn" type="button">Кредит</button>
+            </li>
+          </ul>
+          <ul class="service__list">
+            <li class="service__item delivery">
+              <h3 class="service__item-title">Доставка</h3>
+              <p class="service__text main-text">
+                Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+              </p>
+              <p class="service__text main-text">
+                Ведь мы неплохо заработаем,
+                поднимая его на ваш этаж!
+              </p>
+            </li>
+            <li class="service__item guaranti">
+              <h3 class="service__item-title">Гарантия</h3>
+              <p class="service__text main-text">
+                Если купленный у нас товар поломается или заискрит,
+              </p>
+              <p class="service__text main-text">
+                а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей
+                гарантии.
+                Мы обменяем
+                сгоревший товар на новый.
+              </p>
+              <p class="service__text main-text">
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </li>
+            <li class="service__item credit">
+              <h3 class="service__item-title">Кредит</h3>
+              <p class="service__text main-text">
+                Залезть в долговую яму стало проще!
+              </p>
+              <p class="service__text main-text">
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="service__item-btn main-btn" href="#">Отправить заявку</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="about">
