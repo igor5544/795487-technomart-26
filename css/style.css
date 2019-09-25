@@ -213,9 +213,8 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    width: 156px;
+    width: 150px;
     height: 42px;
-    margin-right: -4px;
     color: #fff; 
 }
 
@@ -273,7 +272,6 @@ body{
 
 .header__links-order{
     background-color: #63a63e;
-    width: 150px;
     justify-content: center;
 }
 
@@ -291,7 +289,7 @@ body{
     align-items: baseline;
     justify-content: space-between;
     margin-top: 46px;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
 }
 
 .header__text-box{
@@ -336,6 +334,7 @@ body{
 
 .header__contacts-adress{
     margin-top: 16px;
+    margin-bottom: 0;
     line-height: 24px;
     color: #32425c;
     text-align: center;
@@ -478,9 +477,10 @@ body{
 .header__menu{
     display: inline-flex;
     justify-content: center;
-    min-width: 960px;
+    min-width: 940px;
     flex-wrap: wrap;
     padding-left: 0;
+    margin-top: 0;
     margin-bottom: 60px;
     background-color: #32425c;   
 }
@@ -493,7 +493,7 @@ body{
 
 .header__menu a{
     display: block;
-    padding: 20px 32px 24px 32px;
+    padding: 20px 31px 23px 31.5px;
     color: #fff;
 }
 
