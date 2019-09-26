@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link
-        href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic"
+        href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -118,17 +118,18 @@
                             <legend class="filters__subtitle">Цена:</legend>
                             <div class="filters__range">
                                 <div class="filters__range-line">
-                                    <div class="range__control-left" tabindex="0" aria-label="Левый ползунок"></div>
-                                    <div class="range__control-right" tabindex="0" aria-label="Правый ползунок"></div>
+                                    <div class="range__control range__control-left" tabindex="0"
+                                        aria-label="Левый ползунок"></div>
+                                    <div class="filters__range-selected"></div>
+                                    <div class="range__control range__control-right" tabindex="0"
+                                        aria-label="Правый ползунок"></div>
                                 </div>
                             </div>
                             <div class="filters__range-numbers">
-                                <label class="filters__name visually-hidden" class="visually-hidden"
-                                    for="price-min-value">От:</label>
+                                <label class="filters__name visually-hidden" for="price-min-value">От:</label>
                                 <input class="filters__range-start" id="price-min-value" name="min-value" type="number"
                                     min="0" max="29500" value="0" step="500">
-                                <label class="filters__name visually-hidden" class="visually-hidden"
-                                    for="price-max-value">До:</label>
+                                <label class="filters__name visually-hidden" for="price-max-value">До:</label>
                                 <input class="filters__range-finish" id="price-max-value" name="max-value" type="number"
                                     min="500" max="30000" value="30000" step="500">
                             </div>
@@ -191,8 +192,18 @@
                             <li><a class="price__sorting-item" href="#">По функционалу</a></li>
                         </ul>
                         <ul class="price__sorting-btns">
-                            <li><a class="price__sorting-up" href="#" aria-label="По убыванию"></a></li>
-                            <li><a class="price__sorting-down" href="#" aria-label="По возрастанию"></a></li>
+                            <li>
+                                <a class="price__sorting-up" href="#" aria-label="По убыванию">
+                                    <svg class="sorting-up__ico" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                        <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="price__sorting-down" href="#" aria-label="По возрастанию">
+                                    <svg class="sorting-down__ico" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                        <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <ul class="price__list">
@@ -446,7 +457,7 @@
         <h2 class="visually-hidden">Добавленеие товара</h2>
         <p class="adding__text">Товар добавлен в корзину!</p>
         <div class="adding__bottom">
-            <a class="adding__btn main-btn" href="#">Оформить заказ</>
+            <a class="adding__btn main-btn" href="#">Оформить заказ</a>
             <a class="adding__btn main-btn" href="catalog.html">Продолжить покупки</a>
         </div>
         <button class="modal__close" type="button" aria-label="Закрыть"></button>

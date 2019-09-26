@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link
-    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans+Narrow|PT+Sans:400,700&display=swap&subset=cyrillic"
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -91,6 +91,7 @@
         <h2 class="visually-hidden">Особенности:</h2>
         <ul class="feature__list">
           <li class="feature__item">
+            <div class="flag flag-new">новинка</div>
             <h3 class="feature__title">Материалы</h3>
             <a class="feature__btn" href="">на любой вкус</a>
           </li>
@@ -103,19 +104,15 @@
             <a class="feature__btn" href="">для стройки</a>
           </li>
           <li class="feature__item slider">
+            <button class="slider__arrow-prev" type="button" aria-label="Назад"></button>
+            <button class="slider__arrow-next" type="button" aria-label="Вперёд"></button>
+            <input class="slider__dots visually-hidden" type="radio" name="slider-items" id="first-slide">
+            <input class="slider__dots visually-hidden" type="radio" name="slider-items" id="second-slide" checked>
+            <div class="slider-dots__wrapeer">
+                <label class="slider__dots-title" for="first-slide">Первый слайд</label>
+                <label class="slider__dots-title" for="second-slide">Второй слайд</label>
+            </div>
             <ul class="feature__slider">
-              <h3 class="visually-hidden">Слайдер:</h3>
-              <li class="feature__slider-control">
-                <h3 class="visually-hidden">Элементы управления</h3>
-                <button class="slider__arrow-prev" type="button" aria-label="Назад"></button>
-                <button class="slider__arrow-next" type="button" aria-label="Вперёд"></button>
-                <div class="slider-dots__wrapeer">
-                  <label class="visually-hidden" for="first-slide">Первый слайд</label>
-                  <input class="slider__dots" type="radio" name="slider-items" id="first-slide">
-                  <label class="visually-hidden" for="second-slide">Второй слайд</label>
-                  <input class="slider__dots" type="radio" name="slider-items" id="second-slide" checked>
-                </div>
-              </li>
               <li class="feature__slider-item">
                 <h3 class="feature__slider-title">Перфораторы</h3>
                 <p class="feature__slider-text">Настоящие мужские игрушки</p>
@@ -361,7 +358,7 @@
             <h3 class="about__title">КОНТАКТЫ</h3>
             <p class="about__text main-text">Вы можете забрать товар сами,
               заехав в наш офис:</p>
-            <a class="about__map" href="#">
+            <a class="about__map" href="https://goo.gl/maps/ZQ8Xn9EDhsNTwbbs7" target="_blank">
               <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             </a>
             <a class="about__btn main-btn" href="">
