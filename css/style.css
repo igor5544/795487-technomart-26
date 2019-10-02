@@ -43,7 +43,8 @@ img {
     background-color: #f9f5f0;
 }
 
-.flag {
+.flag-new::before{ 
+    content: "новинка"; 
     position: absolute;
     top: -1px;
     right: -1px;
@@ -52,9 +53,6 @@ img {
     text-indent: -2000px;
     color: transparent;
     z-index: 20;
-}
-
-.flag-new {
     background: url("../img/new-flag.png");
 }
 
@@ -664,7 +662,7 @@ img {
     list-style: none;
 }
 
-.feature__item .flag{
+.feature__item.flag-new::before{
     top: 0;
     right: 0;
 }
@@ -677,7 +675,7 @@ img {
     margin-bottom: 20px;
 }
 
-.feature__item::before{
+.feature__item::after{
     content: "";
     position: absolute;
     top: 30px;
@@ -688,7 +686,7 @@ img {
     background-color: #ffbf47;
 }
 
-.feature__item:first-child::before{
+.feature__item:first-child::after{
     top: 31px;
     right: 43px;
     background-image: url(../img/icon-1.svg);
@@ -700,7 +698,7 @@ img {
     background-color: #3bbce3;
 }
 
-.feature__item:nth-child(2)::before{
+.feature__item:nth-child(2)::after{
     top: 33px;
     right: 28px;
     background-image: url(../img/icon-2.svg);
@@ -712,7 +710,7 @@ img {
     background-color: #dc91d8;
 }
 
-.feature__item:nth-child(3)::before{
+.feature__item:nth-child(3)::after{
     top: 31px;
     right: 31px;
     background-image: url(../img/icon-3.svg);
@@ -724,7 +722,7 @@ img {
     background-color: #8ed78f;
 }
 
-.feature__items-right .feature__item:nth-child(1)::before{
+.feature__items-right .feature__item:nth-child(1)::after{
     top: 26px;
     right: 45px;
     background-image: url(../img/icon-4.svg);
@@ -736,7 +734,7 @@ img {
     background-color: #ffc047;
 }
 
-.feature__items-right .feature__item:nth-child(2)::before{
+.feature__items-right .feature__item:nth-child(2)::after{
     top: 32px;
     right: 31px;
     background-image: url(../img/icon-5.svg);
@@ -839,11 +837,12 @@ img {
     position: absolute;
     bottom: 30px;
     right: 46.4%;
+    cursor: default;
 }
 
 .slider__dots-title{
     font-size: 0;
-    padding-right: 16.9px;
+    padding-right: 16.9px;  
 }
 
 .slider__dots-title::before{
@@ -1108,7 +1107,7 @@ img {
 }
 
 .service__item:first-child{
-    background-image: url(../img/Delivery-img.png);
+    background-image: url(../img/delivery-img.png);
 }
 
 .service__item:nth-child(2){
@@ -1994,7 +1993,7 @@ input[type="radio"]:disabled + .filters__name-radio::before{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 300px;
+    max-width: 285px;
     margin-right: 14px;
 }
 
