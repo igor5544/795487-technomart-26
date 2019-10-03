@@ -194,13 +194,15 @@
                         <ul class="price__sorting-btns">
                             <li>
                                 <a class="price__sorting-up" href="#" aria-label="По убыванию">
-                                    <svg class="sorting-up__ico" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                    <svg class="sorting-up__ico" xmlns="http://www.w3.org/2000/svg" width="11"
+                                        height="10" viewBox="0 0 11 10">
                                         <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
                                 </a>
                             </li>
                             <li>
                                 <a class="price__sorting-down" href="#" aria-label="По возрастанию">
-                                    <svg class="sorting-down__ico" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                    <svg class="sorting-down__ico" xmlns="http://www.w3.org/2000/svg" width="11"
+                                        height="10" viewBox="0 0 11 10">
                                         <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
                                 </a>
                             </li>
@@ -440,7 +442,7 @@
                             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                         </p>
                         <p class="footer__link">
-                            Разработано — 
+                            Разработано —
                             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                         </p>
                     </div>
@@ -449,6 +451,34 @@
         </div>
 
     </footer>
+
+    <div class="overlay"></div>
+    <section class="feedback modal">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="feedback__form-top">
+                <p>
+                    <label class="feedback__form-title" for="user-name">Ваше имя:</label>
+                    <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                    <label class="feedback__form-title" for="user-email">Ваш e-mail:</label>
+                    <input type="email" name="email" id="user-email" placeholder="email@example.com">
+                </p>
+            </div>
+            <div class="feedback__form-bottom">
+                <p>
+                    <label class="feedback__form-title" for="user-message">Текст письма:</label>
+                    <textarea name="message" id="user-message" cols="30" rows="10"
+                        placeholder="В свободной форме"></textarea>
+                </p>
+            </div>
+            <div class="feedback__bottom">
+                <button class="feedback__btn main-btn" type="submit">Отправить</button>
+            </div>
+        </form>
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    </section>
 
     <section class="adding modal">
         <h2 class="visually-hidden">Добавленеие товара</h2>
@@ -460,6 +490,7 @@
         <button class="modal__close" type="button" aria-label="Закрыть"></button>
     </section>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
