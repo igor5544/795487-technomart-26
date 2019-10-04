@@ -74,6 +74,7 @@ modalOverlay.addEventListener('click', function () {
     modalFeedback.classList.remove('modal-show');
     modalFeedback.classList.remove('modal-error');
     modalAdding.classList.remove('modal-show');
+    modalMap.classList.remove('modal-show');
     modalOverlay.classList.remove('overlay-show');
 });
 
@@ -103,6 +104,32 @@ window.addEventListener('keydown', function (evt) {
         evt.preventDefault();
         if (modalAdding.classList.contains('modal-show')) {
             modalAdding.classList.remove('modal-show');
+            modalOverlay.classList.remove('overlay-show');
+        }
+    }
+});
+
+let btnMap = document.querySelector('.popup-map');
+let modalMap = document.querySelector('.map');
+let closeMap = modalMap.querySelector('.modal__close');
+
+btnMap.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalMap.classList.add('modal-show');
+    modalOverlay.classList.add('overlay-show');
+});
+
+closeMap.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalMap.classList.remove('modal-show');
+    modalOverlay.classList.remove('overlay-show')
+});
+
+window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode == 27) {
+        evt.preventDefault();
+        if (modalMap.classList.contains('modal-show')) {
+            modalMap.classList.remove('modal-show');
             modalOverlay.classList.remove('overlay-show');
         }
     }

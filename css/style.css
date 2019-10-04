@@ -2224,6 +2224,11 @@ input[type="radio"]:disabled + .filters__name-radio::before{
     text-align: center;
 }
 
+.map{
+    width: 970px;
+    height: 476px;
+}
+
 .map__btn{
     top: 24px;
     right: 24px;
