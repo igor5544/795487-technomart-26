@@ -1,5 +1,5 @@
 let modalOverlay = document.querySelector('.overlay');
-let btnFeedback = document.querySelector('.header__links-order');
+let btnFeedback = document.querySelector('.popup-feedback');
 let modalFeedback = document.querySelector('.feedback');
 let closeFeedback = modalFeedback.querySelector('.modal__close');
 let formFeedback = modalFeedback.querySelector('.feedback__form');
@@ -109,7 +109,7 @@ window.addEventListener('keydown', function (evt) {
     }
 });
 
-let btnMap = document.querySelector('.popup-map');
+let btnMap = document.querySelector('.about__map');
 let modalMap = document.querySelector('.map');
 let closeMap = modalMap.querySelector('.modal__close');
 
