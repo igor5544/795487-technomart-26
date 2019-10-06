@@ -1102,7 +1102,7 @@ img {
     background-position: 100% 100%;
 }
 
-.service__item:nth-of-type(1){
+.service__tab-show{
     display: block;
 }
 

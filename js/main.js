@@ -84,8 +84,8 @@ let modalAdding = document.querySelector('.adding');
 let closeAddink = modalAdding.querySelector('.modal__close');
 
 
-for (i = 0; i < btnAddingSet.length; i++) {
-    btnAdding = btnAddingSet[i];
+for (let i = 0; i < btnAddingSet.length; i++) {
+    let btnAdding = btnAddingSet[i];
     btnAdding.addEventListener('click', function (evt) {
         evt.preventDefault();
         modalAdding.classList.add('modal-show');
@@ -135,9 +135,24 @@ window.addEventListener('keydown', function (evt) {
     }
 });
 
+let serviceTabsBtns = document.querySelectorAll('.service__btn');
+let serviceTabContents = document.querySelectorAll('.service__item')
+
+for (let i = 0; i < serviceTabsBtns.length; i++) {
+    serviceTabsBtns[i].addEventListener('click', function (evt) {
+        evt.preventDefault();
+        for (let i = 0; i < serviceTabsBtns.length; i++) {
+            serviceTabsBtns[i].classList.remove('btn-active');
+            serviceTabContents[i].classList.remove('service__tab-show');
+        }
+        serviceTabContents[i].classList.add('service__tab-show')
+        serviceTabsBtns[i].classList.add('btn-active');
+    });
+}
+
 function initMap() {
     let opt = {
-        center: { lat: 59.939, lng: 30.316},
+        center: { lat: 59.939, lng: 30.316 },
         zoom: 16,
     }
 
