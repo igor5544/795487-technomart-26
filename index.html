@@ -466,10 +466,13 @@
 
   <section class="map modal">
     <h2 class="visually-hidden">Развёрнутая карта</h2>
+    <div class="map__google"></div>
     <img src="img/big-map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="970" height="476">
     <button class="map__btn modal__close" type="button" aria-label="Закрыть"></button>
   </section>
 
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV4jlxcUZTr5NSO7sRpJ2ncW_itcauXBY&callback=initMap">
+  </script>
   <script src="js/main.js"></script>
 </body>
 

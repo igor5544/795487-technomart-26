@@ -134,3 +134,19 @@ window.addEventListener('keydown', function (evt) {
         }
     }
 });
+
+function initMap() {
+    let opt = {
+        center: { lat: 59.939, lng: 30.316},
+        zoom: 16,
+    }
+
+    let map = new google.maps.Map(document.querySelector('.map__google'), opt);
+
+    let marker = new google.maps.Marker({
+        position: { lat: 59.938824, lng: 30.3231 },
+        map: map,
+        icon: '../img/map-marker.png',
+        title: 'г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8',
+    })
+};

@@ -2234,6 +2234,15 @@ input[type="radio"]:disabled + .filters__name-radio::before{
     right: 24px;
 }
 
+.map__google{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 940px;
+    height: 446px;
+    transform: translateX(-50%);
+}
+
 .adding{
     width: 620px;
     min-height: 275px;
