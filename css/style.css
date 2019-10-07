@@ -77,7 +77,7 @@ img{
     padding: 11px 5px 9px;
     border-radius: 4px;
     line-height: 18px;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -229,7 +229,7 @@ img{
 
 .header__search:hover{
     background-color: #212a3a;
-    color: white;
+    color: #ffffff;
 }
 
 .header__search:focus{
@@ -405,7 +405,7 @@ img{
     position: relative;
     display: block;
     padding: 8px 49px 9px 71px;
-    border: 3px solid #fff;
+    border: 3px solid #ffffff;
     font-size: 21px;
     font-weight: 700;
     line-height: 21px;
@@ -530,7 +530,7 @@ img{
 }
 
 .header__user-name{
-    padding: 12px 30px 12px 47px;
+    padding: 12px 36px 12px 47px;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -1098,7 +1098,7 @@ img{
 
 .service__btn:hover{
     background-color: #293449;
-    color: white;
+    color: #ffffff;
 }
 
 .btn-active,
@@ -1412,14 +1412,14 @@ img{
     height: 20px;
     top: 50%;
     background-color: #ababab;
-    border: 8px solid #fff;
+    border: 8px solid #ffffff;
     border-radius: 50%;
     cursor: pointer;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    -webkit-box-shadow: 0px 1px 4px -2px #000;
-            box-shadow: 0px 1px 4px -2px #000;
+    -webkit-box-shadow: 0px 1px 4px -2px #000000;
+            box-shadow: 0px 1px 4px -2px #000000;
 }
 
 .range__control-left{
@@ -1738,7 +1738,7 @@ img{
     padding: 10px;
     padding-top: 11px;
     padding-bottom: 9px;
-    color: #fff;
+    color: #ffffff;
     background-color: #ee3643;
 }
 
@@ -1747,7 +1747,7 @@ img{
     position: absolute;
     right: -1px;
     bottom: 0;
-    border: 19px solid #fff;
+    border: 19px solid #ffffff;
     border-left-color: #ee3643;
     border-right: none;
 }
@@ -1763,7 +1763,7 @@ img{
 .price__cost-sale{
     padding-bottom: 10px;
     text-decoration: line-through;
-    color: #999;
+    color: #999999;
 }
 
 .price__actions{
@@ -1783,7 +1783,7 @@ img{
     width: 218px;
     height: 170px;
     font-family: "Cuprum", Arial, sans-serif;
-    background-color: rgb(255,255,255);
+    background-color: #ffffff;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -1803,7 +1803,7 @@ img{
 
 .price__buy{
     position: relative;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 27px 6px 30px;
     border-bottom: 3px solid #367315;
     background-color: #63a63e;
@@ -1840,7 +1840,7 @@ img{
 .price__bookmark{
     padding: 8px 10px 8px;
     border: 3px solid #63a63e;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #32425c;
 }
 
@@ -1907,6 +1907,7 @@ img{
 
 .info__text{
     margin: 0;
+    letter-spacing: 0.06px;
 }
 
 .info__text:last-of-type{
@@ -2329,7 +2330,7 @@ img{
 }
 
 .adding__btn:last-child{
-    color: rgba(0, 0, 0, 1);
+    color: #000000;
     background-color: #ffffff;
 }
 
