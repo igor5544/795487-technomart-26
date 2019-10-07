@@ -117,6 +117,7 @@ btnMap.addEventListener('click', function (evt) {
     evt.preventDefault();
     modalMap.classList.add('modal-show');
     modalOverlay.classList.add('overlay-show');
+    initMap();
 });
 
 closeMap.addEventListener('click', function (evt) {
@@ -154,6 +155,7 @@ function initMap() {
     let opt = {
         center: { lat: 59.939, lng: 30.316 },
         zoom: 16,
+        disableDefaultUI: true,
     }
 
     let map = new google.maps.Map(document.querySelector('.map__google'), opt);
@@ -161,7 +163,7 @@ function initMap() {
     let marker = new google.maps.Marker({
         position: { lat: 59.938824, lng: 30.3231 },
         map: map,
-        icon: '../img/map-marker.png',
+        icon: 'img/map-marker.png',
         title: 'г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8',
     })
 };
