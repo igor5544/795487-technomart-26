@@ -65,7 +65,7 @@
                             </svg>
                             Равшан Джамшутович
                         </a>
-                        <button class="header__user-logout" type="button" aria-label="Выход">
+                        <a href="#" class="header__user-logout" aria-label="Выход">
                             <svg class="header__logout-ico" xmlns="http://www.w3.org/2000/svg" width="21" height="17"
                                 viewBox="0 0 21 17">
                                 <g fill="#c5c5c5">
@@ -74,7 +74,7 @@
                                         d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z" />
                                 </g>
                             </svg>
-                        </button>
+                        </a>
                     </p>
                     <ul class="header__user-links">
                         <li><a href="#">Мои заказы</a></li>
@@ -138,26 +138,26 @@
                             <legend class="filters__subtitle">Производители:</legend>
                             <ul>
                                 <li>
-                                    <input class="visually-hidden" type="checkbox" name="Bosch" id="filter-Bosch"
+                                    <input class="filters__checkbox visually-hidden" type="checkbox" name="Bosch" id="filter-Bosch"
                                         checked>
                                     <label class="filters__name-checkbox" for="filter-Bosch">Bosch</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden" type="checkbox" name="interscol"
+                                    <input class="filters__checkbox visually-hidden" type="checkbox" name="interscol"
                                         id="filter-interscol">
                                     <label class="filters__name-checkbox" for="filter-interscol">Интерскол</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden" type="checkbox" name="Makita" id="filter-Makita"
+                                    <input class="filters__checkbox visually-hidden" type="checkbox" name="Makita" id="filter-Makita"
                                         checked>
                                     <label class="filters__name-checkbox" for="filter-Makita">Makita</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden" type="checkbox" name="ewalt" id="filter-ewalt">
+                                    <input class="filters__checkbox visually-hidden" type="checkbox" name="ewalt" id="filter-ewalt">
                                     <label class="filters__name-checkbox" for="filter-ewalt">Dewalt</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden" type="checkbox" name="Hitachi" id="filter-Hitachi">
+                                    <input class="filters__checkbox visually-hidden" type="checkbox" name="Hitachi" id="filter-Hitachi">
                                     <label class="filters__name-checkbox" for="filter-Hitachi">Hitachi</label>
                                 </li>
                             </ul>
@@ -167,12 +167,12 @@
                             <legend class="filters__subtitle">Питание:</legend>
                             <ul>
                                 <li>
-                                    <input class="visually-hidden" type="radio" name="charger-group" value="accumulator"
+                                    <input class="filters__radio visually-hidden" type="radio" name="charger-group" value="accumulator"
                                         id="filter-accum" checked>
                                     <label class="filters__name-radio" for="filter-accum">Аккумуляторные</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden" type="radio" name="charger-group"
+                                    <input class="filters__radio visually-hidden" type="radio" name="charger-group"
                                         value="cable-charger" id="filter-cable">
                                     <label class="filters__name-radio" for="filter-cable">Сетевые</label>
                                 </li>
@@ -193,17 +193,17 @@
                         </ul>
                         <ul class="price__sorting-btns">
                             <li>
-                                <a class="price__sorting-up" href="#" aria-label="По убыванию">
+                                <a class="price__sorting-up price__sorting-active" href="#" aria-label="По убыванию">
                                     <svg class="sorting-up__ico" xmlns="http://www.w3.org/2000/svg" width="11"
                                         height="10" viewBox="0 0 11 10">
-                                        <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
+                                        <path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
                                 </a>
                             </li>
                             <li>
                                 <a class="price__sorting-down" href="#" aria-label="По возрастанию">
                                     <svg class="sorting-down__ico" xmlns="http://www.w3.org/2000/svg" width="11"
                                         height="10" viewBox="0 0 11 10">
-                                        <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+                                        <path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
                                 </a>
                             </li>
                         </ul>
